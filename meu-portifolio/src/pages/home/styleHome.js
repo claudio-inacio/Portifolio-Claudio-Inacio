@@ -88,7 +88,6 @@ export const Inforamtions = styled.div`
       min-width: 100%;
       align-items: center;
       text-align: center;
-
       height: 100%;
     }
 
@@ -96,36 +95,36 @@ export const Inforamtions = styled.div`
       border-radius: 3px;
       padding: 0px;
 
-      color: black;
       font-weight: bold;
       display: flex;
       font-size: 25px;
       color: white;
-
       overflow: hidden;
       width: 100%;
       margin: auto;
     }
 
+    li:hover {
+      cursor: pointer;
+    }
+
     a {
-      width: 100%;
+      width: 80%;
       text-align: center;
-
       margin: auto;
-
       font-size: 1.9vw;
     }
 
-    li:hover {
-      cursor: pointer;
-
-      border-bottom: solid 2px;
-      transition: 0.2s;
+    .links:hover {
+      transition: 0.9s;
+      background-color: #040042;
+      border-radius: 5px;
     }
-    li:focus {
-      border-bottom: solid 2px;
-      transition: 0.2s;
-    }
+    // li:focus {
+    //   border-bottom: solid 2px;
+    //   transition: 0.2s;
+    //   color: red;
+    // }
 
     p {
       display: none;
@@ -140,6 +139,13 @@ export const SocialPages = styled.div`
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
+
+    .icon {
+      color: black;
+    }
+    .icon:hover {
+      color: white;
+    }
   }
 
   @media (min-width: 427px) {
@@ -151,7 +157,14 @@ export const SocialPages = styled.div`
     a {
       margin: 5px;
       width: 30%;
+
       //background-color: blue;
+    }
+    .icon {
+      color: black;
+    }
+    .icon:hover {
+      color: white;
     }
   }
 `;
@@ -253,7 +266,7 @@ export const ContainerSobreMim = styled.div`
     img {
       padding-left: 15px;
       width: 200px;
-      height: 500px;
+      height: 400px;
       border-radius: 5px;
     }
   }
@@ -276,7 +289,12 @@ export const SobreMim = styled.div`
     max-width: 700px;
     width: 100%;
     //min-width: 500px;
-    height: 280px;
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: -250px;
     H2 {
       font-size: 50px;
@@ -313,7 +331,11 @@ export const DivButtons = styled.div`
 
   @media (min-width: 427px) {
     margin-top: 25px;
-
+    background-color: #403637;
+    width: 80%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
     button {
       background-color: transparent;
       color: white;
@@ -343,14 +365,14 @@ export const DivInformations = styled.div`
     border-bottom: 2px solid white;
     margin-top: 15px;
     padding-bottom: 15px;
-    // background-color: orange;
   }
   @media (min-width: 427px) {
     margin-left: 50px;
-    max-width: 300px;
+    max-width: 100%;
     margin-top: 15px;
-    height: 100px;
-    //background-color: blue;
+    min-height: 220px;
+
+    align-items: center;
     ol {
       align-items: flex-start;
       margin-left: 30px;
@@ -532,4 +554,13 @@ export const Carrossel = styled.div`
   @media (min-width: 427px) {
     display: none;
   }
+`;
+
+export const Contato = styled.div`
+  background-color: #2f1ae8;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 25px;
+  text-align: center;
 `;

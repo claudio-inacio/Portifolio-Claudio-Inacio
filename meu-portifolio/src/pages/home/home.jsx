@@ -14,6 +14,7 @@ import {
   SobreMim,
   SemCarrossel,
   SocialPages,
+  Contato,
 } from "./styleHome";
 import {
   BsLinkedin,
@@ -24,7 +25,7 @@ import {
 } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
 import { useRef, useState } from "react";
-import foto from "../../image/car.jpg";
+import eu from "../../image/eu.png";
 import react from "../../image/structure.png";
 import html from "../../image/html-5.png";
 import css from "../../image/css.png";
@@ -130,7 +131,7 @@ const ProjetosREACT = [
     html: javaScript,
     react: react,
     descricao:
-      "Pojeto desensolvido em ReactJS utilizando varias bibliotecas como: AXIOS, REACT-HOOK-FORM, REACT-TOASTFI entre outras.. esse utilizou consumo de REST API, nessa aplicação o usuario pode estar salvando todas as suas tecnologias preferidas",
+      "Meu primeiro projeto que possui um CRUD completo. Desenvolvido em REACT.JS o projeto consiste basicamente em um app para cadastrarmos as tecnologias que estamos estudando, nesse app temos cadastro de usuário, login de usuário, cadastro de linguagens, listagem das linguagens cadastradas, o usuário pode também realizar a exclusão das linguagens do seu painel, além de avançar o nível em que ele se encontra no momento.",
   },
   {
     titulo: "Gestão de Habitos",
@@ -241,6 +242,7 @@ const Home = () => {
             <li>
               <Link
                 activeClass="active"
+                className="links"
                 to="Apresentacao"
                 spy={true}
                 smooth={true}
@@ -252,6 +254,7 @@ const Home = () => {
             </li>
             <li>
               <Link
+                className="links"
                 activeClass="active"
                 to="sobremim"
                 spy={true}
@@ -265,6 +268,7 @@ const Home = () => {
             <li>
               <Link
                 activeClass="active"
+                className="links"
                 to="projetos"
                 spy={true}
                 smooth={true}
@@ -277,7 +281,8 @@ const Home = () => {
             <li>
               <Link
                 activeClass="active"
-                to="projetos"
+                className="links"
+                to="contato"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -296,13 +301,13 @@ const Home = () => {
             href="https://www.linkedin.com/in/claudio-in%C3%A1cio-felipe-junior/"
             target="_blank"
           >
-            <BsLinkedin size={30} color="black" />
+            <BsLinkedin className="icon" size={30} />
           </a>
           <a href="https://github.com/claudio-inacio" target="_blank">
-            <BsGithub size={30} color="black" />
+            <BsGithub size={30} className="icon" />
           </a>
           <a href="https://www.instagram.com/c.inaciio/" target="_blank">
-            <BsInstagram size={30} color="black" />
+            <BsInstagram size={30} className="icon" />
           </a>
         </SocialPages>
       </Header>
@@ -316,7 +321,7 @@ const Home = () => {
       </Apresentacao>
       <ContainerSobreMim id="sobremim">
         <figure>
-          <img src={foto} alt="teste" />
+          <img src={eu} alt="teste" />
         </figure>
 
         <SobreMim>
@@ -335,12 +340,12 @@ const Home = () => {
             {habilits && (
               <ol>
                 <li>Html5, CSS3, JavaScript, ReactJS</li>
+                <li>TypeScript</li>
                 <li>REST API</li>
                 <li>Context API</li>
                 <li>SCRUM</li>
                 <li>GIT</li>
                 <li>GITHUB</li>
-                <li>TypeScript (estudando)</li>
               </ol>
             )}
             {expirience && (
@@ -458,6 +463,9 @@ const Home = () => {
           </SemCarrossel>
         </DivProjeto>
       </ContainerProjetosSem>
+      <Contato id="contato">
+        <span>E-mail para contato: inacio.unipar@gmail.com</span>
+      </Contato>
     </Container>
   );
 };
