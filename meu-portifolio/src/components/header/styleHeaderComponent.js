@@ -20,7 +20,7 @@ border-radius: 20px;
 z-index: 999;       
 
   @media (max-width: 499px) {
-  
+  padding: 10px;
     .divHamburguer {
       
       display: block;

@@ -1,78 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-background-color: rgb(16, 16, 16);
-  @media (max-width: 426px) {
-    background-color: rgb(16, 16, 16);
-  }
-  background-color: rgb(16, 16, 16);
+
 `;
 
 
-export const Apresentacao = styled.div`
-  height: 100vh;
-  min-width: 100%;
-  h2 {
-    color: #2f1ae8;
-  }
-
-  @media (max-width: 426px) {
-    //background-color: rgb(16, 16, 16);
-
-    padding-top: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-
-    h3 {
-      margin: 15px;
-      margin-top: 50px;
-      font-size: 20px;
-    }
-
-    h1 {
-      margin: 10px;
-    }
-    h2 {
-      padding: 15px;
-    }
-  }
-  @media (min-width: 427px) {
-    padding-top: 150px;
-    height: 100%;
-    color: white;
-    text-align: center;
-
-    h3 {
-      font-size: 30px;
-    }
-    h1 {
-      margin-top: 80px;
-      font-size: 50px;
-    }
-    h2 {
-      font-size: 40px;
-      margin-top: 60px;
-    }
-
-    figure {
-      margin-top: 25px;
-
-      img {
-        width: 100px;
-        height: 100px;
-        transform: rotate(90deg);
-        // transform-origin: left top 0;
-      }
-      img:hover {
-        cursor: pointer;
-      }
-    }
-  }
-`;
 
 export const ContainerSobreMim = styled.div`
   height: 100vh;
