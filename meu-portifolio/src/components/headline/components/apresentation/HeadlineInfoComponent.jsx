@@ -16,7 +16,6 @@ const HeadlineInfoComponent = ({ }) => {
       <span>
         Construo interfaces rápidas, modernas e fáceis de usar — transformando processos burocráticos em experiências simples e inteligentes 🚀
       </span>
-      {/* <button>Curriculo</button> */}
       <ButtonCurrinculoDownlaod handleDownload={handleDownload} />
     </HeadlineInfo>
   );

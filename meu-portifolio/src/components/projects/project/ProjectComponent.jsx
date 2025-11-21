@@ -3,15 +3,15 @@ import ProjectHeaderComponent from "./ProjectHeaderCompnent";
 import ProjectInfoComponent from "./ProjectInfoComponent";
 import { Project } from "./styleProjectComponent";
 
-const ProjectComponent = ({ InstagramProjectImage, BackgroundProjectImage }) => {
+const ProjectComponent = ({ projectData, backgroundImage }) => {
   return (
     <Project>
       <ProjectHeaderComponent
-        mainImage={InstagramProjectImage}
-        backgroundImage={BackgroundProjectImage}
+        mainImage={projectData?.image}
+        backgroundImage={backgroundImage}
       />
-      <ProjectInfoComponent title='INSTAGRAM' technologies={['instagram']} description='projeto insta' />
-      <ProjectActionsComponent codeUrl={''} demoUrl={''} />
+      <ProjectInfoComponent title={projectData.title} technologies={projectData.technologies} description={projectData.description} />
+      <ProjectActionsComponent codeUrl={projectData.codeUrl} demoUrl={projectData.demoUrl} />
     </Project>
   );
 };

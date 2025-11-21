@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-const ButtonCurrinculoDownlaod = ({handleDownload}) => {
+const ButtonCurrinculoDownlaod = ({ handleDownload }) => {
   return (
     <StyledWrapper>
       <button className="download-button" onClick={() => handleDownload()}>
@@ -50,35 +50,35 @@ const ButtonCurrinculoDownlaod = ({handleDownload}) => {
 
 const StyledWrapper = styled.div`
   .download-button {
-  padding: 10px;
+    padding: 10px;
     position: relative;
     border-width: 0;
     color: ${({ theme }) => theme.colors.white};
     font-size: 13px;
     font-weight: 600;
+    margin-bottom: 25px;
     cursor: pointer;
     border-radius: 6px;
     z-index: 1;
   }
 
-.docs {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  color: #fff;
-  min-height: 24px;
-  padding: 0 8px;
-  border-radius: 6px;
-  background-color: ${({ theme }) => theme.colors.primary};
-  transition: all 0.4s ease;
-  position: relative;
-}
+  .docs {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #fff;
+    min-height: 24px;
+    padding: 0 8px;
+    border-radius: 6px;
+    background-color: ${({ theme }) => theme.colors.primary};
+    transition: all 0.4s ease;
+    position: relative;
+  }
 
-.label-normal,
-.label-hover {
-  color: #fff;
-}
-
+  .label-normal,
+  .label-hover {
+    color: #fff;
+  }
 
   .label-normal {
     opacity: 1;

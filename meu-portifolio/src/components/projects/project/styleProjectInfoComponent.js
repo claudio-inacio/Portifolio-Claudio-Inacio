@@ -28,7 +28,7 @@ export const ProjectInfo = styled.div`
 
   .tech {
     background: #f0f0f0;
-    padding: 4px 10px;
+    padding: 8px 10px;
     border-radius: 10px;
     font-size: 0.78rem;
     color: #333;
