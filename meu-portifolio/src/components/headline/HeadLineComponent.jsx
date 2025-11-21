@@ -1,16 +1,16 @@
-import AboutMeImageComponent from "./components/about-me/AboutMeImageComponent";
-import AboutMeInfoComponent from "./components/about-me/AboutMeInfo";
+
 
 import MeImageDontBackgorund from "./../../image/eu-portifolio-removebg-preview.png"
-import MeImage from "./../../image/eu-portifolio.png"
 import {  HeadLine } from "./styleHeadLineComponent";
+import HeadlineImageComponent from "./components/apresentation/HeadlineImageComponent";
+import HeadlineInfoComponent from "./components/apresentation/HeadlineInfoComponent";
 
 
 const HeadLineComponent = ({ showMenu, showClickMenu }) => {
   return (
-    <HeadLine>
-      <AboutMeInfoComponent /> 
-      <AboutMeImageComponent image={MeImageDontBackgorund} />
+    <HeadLine id='Apresentacao'>
+      <HeadlineInfoComponent /> 
+      <HeadlineImageComponent image={MeImageDontBackgorund} />
     </HeadLine>
   );
 };

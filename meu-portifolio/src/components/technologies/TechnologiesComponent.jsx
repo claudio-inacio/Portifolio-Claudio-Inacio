@@ -18,13 +18,13 @@ export const tecnologiesIconsArray = [
   },
   {
     name: "JAVA SCRIPT",
-    exibeName: true,
+    exibeName: false,
     icon: <i class="devicon-javascript-plain colored" />,
     description: "Linguagem que adiciona interatividade e lógica às páginas web."
   },
   {
     name: "TYPE SCRIPT",
-    exibeName: true,
+    exibeName: false,
     icon: <i class="devicon-typescript-plain colored" />,
     description: "Superset do JavaScript com tipagem estática e maior segurança."
   },
@@ -109,7 +109,7 @@ const TechnologiesComponent = () => {
   };
 
   return (
-    <TechnologieContainer>
+    <TechnologieContainer id='projetos'>
       <h2>Tecnologias</h2>
 
       <div className="carousel-track" ref={trackRef}>

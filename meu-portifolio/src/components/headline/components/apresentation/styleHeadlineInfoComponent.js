@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AboutMeInfo = styled.div`
+export const HeadlineInfo = styled.div`
   box-sizing: border-box;
   max-width: 100%; 
   flex-shrink: 1; 

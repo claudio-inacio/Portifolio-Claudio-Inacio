@@ -1,13 +1,14 @@
 import ButtonCurrinculoDownlaod from "../../../modern-icons/buttons/ButtonCurrinculoDownlaod";
-import { AboutMeInfo } from "./styleAboutMeInfo";
+import { HeadlineInfo } from "./styleHeadlineInfoComponent";
 
-const AboutMeInfoComponent = ({ showMenu, showClickMenu }) => {
+
+const HeadlineInfoComponent = ({ }) => {
   const handleDownload = () => {
   window.open("https://drive.google.com/file/d/1AIi2e7pMWo-0Yd7SYMixwIJQXAQ7G2yc/view?usp=sharing", "_blank");
 };
 
   return (
-    <AboutMeInfo>
+    <HeadlineInfo>
       <h1>{`<Hello World! />`}
         <br/>
           Me chamo Claudio Inácio!
@@ -17,8 +18,8 @@ const AboutMeInfoComponent = ({ showMenu, showClickMenu }) => {
       </span>
       {/* <button>Curriculo</button> */}
       <ButtonCurrinculoDownlaod handleDownload={handleDownload} />
-    </AboutMeInfo>
+    </HeadlineInfo>
   );
 };
 
-export default AboutMeInfoComponent;
+export default HeadlineInfoComponent;

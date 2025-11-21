@@ -6,12 +6,12 @@ export const ArrayHeaderInfos = [
     title: "Início",
   },
   {
-    sectionDirection: "sobremim",
-    title: "Sobre",
-  },
-  {
     sectionDirection: "projetos",
     title: "Projetos",
+  },
+  {
+    sectionDirection: "sobremim",
+    title: "Sobre",
   },
   {
     sectionDirection: "contato",

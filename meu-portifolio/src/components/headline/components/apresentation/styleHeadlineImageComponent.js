@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AboutMeImage = styled.div`
+export const HeadlineImage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;

@@ -235,57 +235,57 @@ export const DivProjeto = styled.div`
   }
 `;
 
-//export const Projeto = styled.div`
-//  @media (max-width: 426px) {
-//    display: flex;
-//    flex-direction: column;
-//    justify-content: center;
-//    align-items: center;
-//    background-color: #191919;
-//    border-radius: 5px;
-//
-//    h3 {
-//      padding: 5px;
-//    }
-//    img {
-//      width: 200px;
-//      height: 250px;
-//    }
-//    div {
-//      img {
-//        width: 30px;
-//        height: 30px;
-//        margin: 5px;
-//      }
-//    }
-//  }
-//  @media (min-width: 427px) {
-//    display: flex;
-//    flex-direction: column;
-//    justify-content: center;
-//    align-items: center;
-//    background-color: #191919;
-//    border-radius: 5px;
-//
-//    h3 {
-//      padding: 5px;
-//    }
-//    img {
-//      width: 300px;
-//      height: 350px;
-//    }
-//    div {
-//      img {
-//        width: 50px;
-//        height: 50px;
-//        margin: 5px;
-//      }
-//    }
-//  }
-//`;
+export const Projeto = styled.div`
+ @media (max-width: 426px) {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #191919;
+   border-radius: 5px;
+
+   h3 {
+     padding: 5px;
+   }
+   img {
+     width: 200px;
+     height: 250px;
+   }
+   div {
+     img {
+       width: 30px;
+       height: 30px;
+       margin: 5px;
+     }
+   }
+ }
+ @media (min-width: 427px) {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #191919;
+   border-radius: 5px;
+
+   h3 {
+     padding: 5px;
+   }
+   img {
+     width: 300px;
+     height: 350px;
+   }
+   div {
+     img {
+       width: 50px;
+       height: 50px;
+       margin: 5px;
+     }
+   }
+ }
+`;
 
 export const ContainerProjetos = styled.div`
-  color: white;
+  color: #0000;
   color: white;
   @media (max-width: 426px) {
     display: flex;

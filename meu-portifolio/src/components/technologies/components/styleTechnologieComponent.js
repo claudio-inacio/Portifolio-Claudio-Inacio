@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const TechnologieItem = styled.div`
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 14px;
   border: 1px solid #333;
   display: flex;
@@ -28,13 +28,13 @@ export const TechnologieItem = styled.div`
 
   /* MOBILE */
   @media (max-width: 710px) {
-    width: 95px;
-    height: 95px;
+    width: 70px;
+    height: 70px;
   }
 `;
 
 export const TechIcon = styled.div`
-  font-size: 100px;
+  font-size: 50px;
   display: flex;
   align-items: center;
   justify-content: center;

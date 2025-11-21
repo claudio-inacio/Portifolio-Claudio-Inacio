@@ -46,6 +46,8 @@ import CardProjeto from "../../components/CardProjeto/card";
 import HeaderComponent from "../../components/header/HeaderComponent";
 import HeadLineComponent from "../../components/headline/HeadLineComponent";
 import TechnologiesComponent from "../../components/technologies/TechnologiesComponent";
+import { ProjetosREACT } from "../../utils";
+import ProjectsComponent from "../../components/projects/ProjectsComponent";
 
 const Home = () => {
   const carrosselHTML = useRef(null);
@@ -128,6 +130,7 @@ const Home = () => {
       <HeaderComponent showClickMenu={showClickMenu} showMenu={showMenu} />
       <HeadLineComponent />
       <TechnologiesComponent />
+      <ProjectsComponent />
     </Container>
   );
 };
