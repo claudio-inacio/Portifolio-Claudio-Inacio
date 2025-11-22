@@ -1,13 +1,64 @@
-import MeImageDontBackgorund from "./../../image/eu-portifolio-removebg-preview.png";
-import ProjectHeaderComponent from "./project/ProjectHeaderCompnent";
+
 import { ProjectsContainer } from "./styleProjectsComponent";
 import BackgroundProjectImage from "../../image/background-image.jpeg";
+import BackgroundProjectImage2 from "../../image/background-image-2.jpeg";
+import BackgroundProjectImage3 from "../../image/background-image-3.png";
 import InstagramProjectImage from "../../image/instagram-projetct-portifolio.png";
-import EcommerceProjectImage from "../../image/eccomerce-prject-portifolio.png";
+import ListaDeFrutasProjectImage from "../../image/lista-de-frutas-projeto.png";
+import GabrielDoCellProjectImage from "../../image/gabriel-do-cel-project.png";
+import CurriculoProjectImage from "../../image/curriculo-projeto.png";
+import PedraPapelTesouraProjectImage from "../../image/project-pedra-papel-tesoura.png";
+import EcommerceProjectImage from "../../image/ecommerce-project.png";
+import JogoGeniusPrjectImage from "../../image/jogo-genius-projeto.png";
 import ProjectComponent from "./project/ProjectComponent";
-import { MdOutlineVisibility } from "react-icons/md";
+import ProjectsGrid from "./ProjectGrid";
 
 export const arrayProjectsInfo = [
+  {
+    title: "GABRIEL DO CELL",
+    technologies: ["HTML", "CSS", 'REACTJS', 'SASS'],
+    description:
+      "Landing Page desenvolvida como catálogo para facilitar a exibição dos produtos disponíveis para os clientes da Gabriel do Cell. (As imagens dos produtos são ilustrativas, utilizadas apenas para composição do portfólio.)",
+    demoUrl: "https://gabirel-do-cell.vercel.app/#my_products",
+    codeUrl: "https://github.com/claudio-inacio/hamburgueria-react",
+    image: GabrielDoCellProjectImage,
+  },
+  {
+    title: "BURGUER HERO",
+    technologies: ["HTML", "CSS", 'REACTJS'],
+    description:
+      "Case de estudo, colocando em pratica conceitos importantes de ReactJs, como componentização, estados, redux, manipulação de listas, entre outros... O projeto simula um pedido de delivery até o pagamento.",
+    demoUrl: "https://hamburgueria-react-gamma.vercel.app/",
+    codeUrl: "https://github.com/claudio-inacio/gabirel-do-cell/tree/master",
+    image: GabrielDoCellProjectImage,
+  },
+  {
+    title: "LISTA DE PRODUTOS",
+    technologies: ["HTML", "CSS", "JAVASCRIPT"],
+    description:
+      "Case de estudo utilizando alguns conceitos mais aprofundados de JavaScript, aqui o usuário pode inserir e remover produtos do carrinho.",
+    demoUrl: "https://lista-de-produtos-six.vercel.app/",
+    codeUrl: "https://github.com/claudio-inacio/lista-de-produtos",
+    image: ListaDeFrutasProjectImage,
+  },
+  {
+    title: "PEDRA, PAPEL, TESOURA.",
+    technologies: ["HTML", "CSS", "JAVASCRIPT"],
+    description:
+      "Um jogo desenvolvido com o objetivo de colocar em prática conceitos básicos de JavaScript, trabalhando lógica, eventos e interações visuais. O projeto simula as escolhas de pedra, papel e tesoura, determinando o vencedor conforme as regras clássicas.",
+    demoUrl: "https://jogo-pedra-papel-tesoura-sable.vercel.app/",
+    codeUrl: "https://github.com/claudio-inacio/jogo-pedra-papel-tesoura",
+    image: PedraPapelTesouraProjectImage,
+  },
+  {
+    title: "JOGO GÊNIUS",
+    technologies: ["HTML", "CSS", 'JAVASCRIPT'],
+    description:
+      "Um jogo desenvolvido com o objetivo de por em pratica conceitos basicos de JavaScript. trabalhando lógica, eventos e interações visuais. O projeto simula as sequências de cores clássicas do jogo.",
+    demoUrl: "https://jogo-da-memoria-mu-olive.vercel.app/",
+    codeUrl: "https://github.com/claudio-inacio/jogo-da-memoria",
+    image: JogoGeniusPrjectImage,
+  },
   {
     title: "E-COMMERCE",
     technologies: ["HTML", "CSS"],
@@ -34,17 +85,27 @@ export const arrayProjectsInfo = [
       "Case de estudo simples. Meu primeiro projeto desenvolvido, buscando conhecer as TAGS semanticas e alinhamentos em CSS.",
     demoUrl: "https://curriculum-html-css.vercel.app/",
     codeUrl: "https://github.com/claudio-inacio/curriculum-html-css",
-    image: InstagramProjectImage,
+    image: CurriculoProjectImage,
   },
 ];
 const ProjectsComponent = ({ showMenu, showClickMenu }) => {
   return (
     <ProjectsContainer>
-      {arrayProjectsInfo.map((project) => {
-        return <ProjectComponent projectData={project} backgroundImage={BackgroundProjectImage} />;
-      })}
+       <h2>Projetos</h2>
+      <ProjectsGrid>
+        {arrayProjectsInfo.map((project) => {
+          return (
+            <ProjectComponent
+              key={project.id}
+              projectData={project}
+              backgroundImage={BackgroundProjectImage3}
+            />
+          );
+        })}
+      </ProjectsGrid>
     </ProjectsContainer>
   );
 };
 
 export default ProjectsComponent;
+

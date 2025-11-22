@@ -3,8 +3,10 @@ import styled from "styled-components";
 export const ProjectActions = styled.div`  
   display: flex;
   justify-content: space-between;
-  // gap: 12px;
   padding: 10px;
+
+  /* Empurra os botões para o final do card */
+  margin-top: auto;
 
   .btn {
     flex: 1;

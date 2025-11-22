@@ -5,22 +5,36 @@ export const ProjectsContainer = styled.div`
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  justify-content: center;
+
   align-items: center;
-  gap: 30px;
+  h2 {
+    color: ${({ theme }) => theme.colors.primary};
+    font-weight: bold;
+    font-size: clamp(22px, 4vw, 35px);
+    max-width: 100%;
+  }
 
   @media (max-width: 710px) {
-    padding: 20px 0;
     flex-direction: column;
+  h2 {
+    color: ${({ theme }) => theme.colors.primary};
+    font-weight: bold;
+    font-size: clamp(22px, 4vw, 35px);
+    max-width: 100%;
+  }
   }
 
   @media (min-width: 711px) {
-    padding-top: 100px;
-    flex-direction: row; 
+  h2 {
+    color: ${({ theme }) => theme.colors.primary};
+    font-weight: bold;
+    font-size: clamp(22px, 4vw, 35px);
+    max-width: 100%;
+  }
     justify-content: center;
-    align-items: start;
-     gap: 30px;
+
+    padding-left: 50px;
+    padding-rigth: 100px;
   }
 `;

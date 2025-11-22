@@ -9,7 +9,7 @@ export const ProjectInfo = styled.div`
   h3 {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #1c1c1c;
+       color: ${({ theme }) => theme.colors.primary};
     margin: 0;
   }
 

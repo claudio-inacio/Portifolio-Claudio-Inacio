@@ -110,7 +110,7 @@ const TechnologiesComponent = () => {
 
   return (
     <TechnologieContainer id='projetos'>
-      <h2>Tecnologias</h2>
+      {/* <h2>Tecnologias</h2> */}
 
       <div className="carousel-track" ref={trackRef}>
         {[...tecnologiesIconsArray, ...tecnologiesIconsArray].map(
