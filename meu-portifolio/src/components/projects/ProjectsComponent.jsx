@@ -6,6 +6,7 @@ import BackgroundProjectImage3 from "../../image/background-image-3.png";
 import InstagramProjectImage from "../../image/instagram-projetct-portifolio.png";
 import ListaDeFrutasProjectImage from "../../image/lista-de-frutas-projeto.png";
 import GabrielDoCellProjectImage from "../../image/gabriel-do-cel-project.png";
+import PortifolioProjectImage from "../../image/portifolio-project.png";
 import CurriculoProjectImage from "../../image/curriculo-projeto.png";
 import PedraPapelTesouraProjectImage from "../../image/project-pedra-papel-tesoura.png";
 import EcommerceProjectImage from "../../image/ecommerce-project.png";
@@ -14,6 +15,15 @@ import ProjectComponent from "./project/ProjectComponent";
 import ProjectsGrid from "./ProjectGrid";
 
 export const arrayProjectsInfo = [
+  {
+    title: "MEU PORTIFÓLIO",
+    technologies: ["HTML", "CSS", 'REACTJS', 'STYLED-COMPONENTS'],
+    description:
+      "Esse portifolio também foi desenvolvido com React juntamente com Styled-Components... Caso tenha interesse o código esta disponivel :)",
+    demoUrl: "https://gabirel-do-cell.vercel.app/#my_products",
+    codeUrl: "https://github.com/claudio-inacio/hamburgueria-react",
+    image: PortifolioProjectImage,
+  },
   {
     title: "GABRIEL DO CELL",
     technologies: ["HTML", "CSS", 'REACTJS', 'SASS'],
