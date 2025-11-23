@@ -1,36 +1,14 @@
 import {
-  Apresentacao,
-  Carrossel,
   Container,
-  ContainerProjetos,
-  ContainerProjetosSem,
-  ContainerSobreMim,
-  DivButtons,
-  DivInformations,
-  DivProjeto,
-  Header,
-  Informations,
-  Projeto,
-  SobreMim,
-  SemCarrossel,
-  SocialPages,
-  Contato,
 } from "./styleHome";
-import {
-  BsLinkedin,
-  BsGithub,
-  BsInstagram,
-  BsArrowLeftSquareFill,
-  BsArrowRightSquareFill,
-} from "react-icons/bs";
-import { AiOutlineMenu } from "react-icons/ai";
+
+
 import { useRef, useState } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
-import CardProjeto from "../../components/CardProjeto/card";
+
 import HeaderComponent from "../../components/header/HeaderComponent";
 import HeadLineComponent from "../../components/headline/HeadLineComponent";
 import TechnologiesComponent from "../../components/technologies/TechnologiesComponent";
-import { ProjetosREACT } from "../../utils";
+
 import ProjectsComponent from "../../components/projects/ProjectsComponent";
 
 const Home = () => {
