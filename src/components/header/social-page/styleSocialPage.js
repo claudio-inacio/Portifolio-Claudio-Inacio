@@ -21,12 +21,15 @@ export const SocialPages = styled.div`
     width: 30%;
     flex-wrap: nowrap;
     justify-content: flex-end;
-    //background-color: red;
     a {
       margin: 5px;
       width: 30%;
 
-      //background-color: blue;
+    }
+    div {
+      margin: 5px;
+      width: 30%;
+
     }
     .icon {
       color: black;

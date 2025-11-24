@@ -10,7 +10,7 @@ const ProjectComponent = ({ projectData, backgroundImage }) => {
         mainImage={projectData?.image}
         backgroundImage={backgroundImage}
       />
-      <ProjectInfoComponent title={projectData.title} technologies={projectData.technologies} description={projectData.description} />
+      <ProjectInfoComponent data={projectData} title={projectData.title} technologies={projectData.technologies} description={projectData.description} />
       <ProjectActionsComponent codeUrl={projectData.codeUrl} demoUrl={projectData.demoUrl} />
     </Project>
   );

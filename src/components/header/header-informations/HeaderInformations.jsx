@@ -10,7 +10,7 @@ export const ArrayHeaderInfos = [
     title: "Projetos",
   },
   {
-    sectionDirection: "sobremim",
+    sectionDirection: "sobre",
     title: "Sobre",
   },
   {

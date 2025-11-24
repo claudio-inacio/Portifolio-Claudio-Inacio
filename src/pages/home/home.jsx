@@ -10,6 +10,7 @@ import HeadLineComponent from "../../components/headline/HeadLineComponent";
 import TechnologiesComponent from "../../components/technologies/TechnologiesComponent";
 
 import ProjectsComponent from "../../components/projects/ProjectsComponent";
+import AboutMe from "../../components/aboutme/AboutMeComponent";
 
 const Home = () => {
   const carrosselHTML = useRef(null);
@@ -21,67 +22,6 @@ const Home = () => {
   const [formation, setFormation] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
 
-  const tradeHabilit = (number) => {
-    if (number == 1 && habilits == false) {
-      setHabilits(!habilits);
-      setExpirience(false);
-      setFormation(false);
-    } else if (number == 2 && expirience == false) {
-      setExpirience(!expirience);
-      setHabilits(false);
-      setFormation(false);
-    } else if (number == 3 && formation == false) {
-      setFormation(!formation);
-      setHabilits(false);
-      setExpirience(false);
-    }
-  };
-
-  const slideLeftHTML = (e) => {
-    setTimeout(() => {
-      e.preventDefault();
-      carrosselHTML.current.scrollLeft -= carrosselHTML.current.offsetWidth;
-      console.log(carrosselHTML.current.offsetWidth);
-    }, 300);
-  };
-
-  const slideRightHTML = (e) => {
-    setTimeout(() => {
-      e.preventDefault();
-      carrosselHTML.current.scrollLeft += carrosselHTML.current.offsetWidth;
-      console.log(carrosselHTML.current.offsetWidth);
-    }, 300);
-  };
-
-  const slideLeftJS = (e) => {
-    setTimeout(() => {
-      e.preventDefault();
-      carrosselJS.current.scrollLeft -= carrosselJS.current.offsetWidth;
-      console.log(carrosselJS.current.offsetWidth);
-    }, 300);
-  };
-  const slideRightJS = (e) => {
-    setTimeout(() => {
-      e.preventDefault();
-      carrosselJS.current.scrollLeft += carrosselJS.current.offsetWidth;
-      console.log(carrosselJS.current.offsetWidth);
-    }, 300);
-  };
-
-  const slideLeftREACT = (e) => {
-    setTimeout(() => {
-      e.preventDefault();
-      carrosselREACT.current.scrollLeft -= carrosselREACT.current.offsetWidth;
-      console.log(carrosselREACT.current.offsetWidth);
-    }, 300);
-  };
-  const slideRightREACT = (e) => {
-    setTimeout(() => {
-      e.preventDefault();
-      carrosselREACT.current.scrollLeft += carrosselREACT.current.offsetWidth;
-      console.log(carrosselREACT.current.offsetWidth);
-    }, 300);
-  };
 
   const showClickMenu = () => {
     setShowMenu(!showMenu);
@@ -93,6 +33,7 @@ const Home = () => {
       <HeadLineComponent />
       <TechnologiesComponent />
       <ProjectsComponent />
+      <AboutMe />
     </Container>
   );
 };

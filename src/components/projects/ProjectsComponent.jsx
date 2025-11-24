@@ -3,6 +3,7 @@ import { ProjectsContainer } from "./styleProjectsComponent";
 import BackgroundProjectImage from "../../image/background-image.jpeg";
 import BackgroundProjectImage2 from "../../image/background-image-2.jpeg";
 import BackgroundProjectImage3 from "../../image/background-image-3.png";
+import BurguerHeroProjectImage from "../../image/hamburgueria-project.png";
 import InstagramProjectImage from "../../image/instagram-projetct-portifolio.png";
 import ListaDeFrutasProjectImage from "../../image/lista-de-frutas-projeto.png";
 import GabrielDoCellProjectImage from "../../image/gabriel-do-cel-project.png";
@@ -20,9 +21,10 @@ export const arrayProjectsInfo = [
     technologies: ["HTML", "CSS", 'REACTJS', 'STYLED-COMPONENTS'],
     description:
       "Esse portifolio também foi desenvolvido com React juntamente com Styled-Components... Caso tenha interesse o código esta disponivel :)",
-    demoUrl: "https://gabirel-do-cell.vercel.app/#my_products",
-    codeUrl: "https://github.com/claudio-inacio/hamburgueria-react",
+    demoUrl: null,
+    codeUrl: "https://github.com/claudio-inacio/Portifolio-Claudio-Inacio",
     image: PortifolioProjectImage,
+
   },
   {
     title: "GABRIEL DO CELL",
@@ -40,7 +42,8 @@ export const arrayProjectsInfo = [
       "Case de estudo, colocando em pratica conceitos importantes de ReactJs, como componentização, estados, redux, manipulação de listas, entre outros... O projeto simula um pedido de delivery até o pagamento.",
     demoUrl: "https://hamburgueria-react-gamma.vercel.app/",
     codeUrl: "https://github.com/claudio-inacio/gabirel-do-cell/tree/master",
-    image: GabrielDoCellProjectImage,
+    image: BurguerHeroProjectImage,
+
   },
   {
     title: "LISTA DE PRODUTOS",
@@ -50,6 +53,7 @@ export const arrayProjectsInfo = [
     demoUrl: "https://lista-de-produtos-six.vercel.app/",
     codeUrl: "https://github.com/claudio-inacio/lista-de-produtos",
     image: ListaDeFrutasProjectImage,
+
   },
   {
     title: "PEDRA, PAPEL, TESOURA.",
@@ -59,6 +63,7 @@ export const arrayProjectsInfo = [
     demoUrl: "https://jogo-pedra-papel-tesoura-sable.vercel.app/",
     codeUrl: "https://github.com/claudio-inacio/jogo-pedra-papel-tesoura",
     image: PedraPapelTesouraProjectImage,
+
   },
   {
     title: "JOGO GÊNIUS",
@@ -68,6 +73,7 @@ export const arrayProjectsInfo = [
     demoUrl: "https://jogo-da-memoria-mu-olive.vercel.app/",
     codeUrl: "https://github.com/claudio-inacio/jogo-da-memoria",
     image: JogoGeniusPrjectImage,
+
   },
   {
     title: "E-COMMERCE",
@@ -77,6 +83,7 @@ export const arrayProjectsInfo = [
     demoUrl: "https://ecommerce-html-css-peach.vercel.app/#",
     codeUrl: "https://github.com/claudio-inacio/ecommerce-html-css",
     image: EcommerceProjectImage,
+
   },
 
   {
@@ -87,6 +94,7 @@ export const arrayProjectsInfo = [
     demoUrl: "https://rede-social-html-css.vercel.app/",
     codeUrl: "https://github.com/claudio-inacio/rede-social-html-css",
     image: InstagramProjectImage,
+
   },
   {
     title: "CURRICULO",
@@ -96,6 +104,7 @@ export const arrayProjectsInfo = [
     demoUrl: "https://curriculum-html-css.vercel.app/",
     codeUrl: "https://github.com/claudio-inacio/curriculum-html-css",
     image: CurriculoProjectImage,
+
   },
 ];
 const ProjectsComponent = ({ showMenu, showClickMenu }) => {

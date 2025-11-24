@@ -14,7 +14,7 @@ const HeadlineInfoComponent = ({ }) => {
           Me chamo Claudio Inácio!
       </h1>
       <span>
-        Construo interfaces rápidas, modernas e fáceis de usar — transformando processos burocráticos em experiências simples e inteligentes 🚀
+        Desenvolvedor FRONT-END! <br/>Construo interfaces rápidas, modernas e fáceis de usar — transformando processos burocráticos em experiências simples e inteligentes 🚀
       </span>
       <ButtonCurrinculoDownlaod handleDownload={handleDownload} />
     </HeadlineInfo>
