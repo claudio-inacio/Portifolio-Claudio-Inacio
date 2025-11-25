@@ -4,7 +4,7 @@ import { HeadlineInfo } from "./styleHeadlineInfoComponent";
 
 const HeadlineInfoComponent = ({ }) => {
   const handleDownload = () => {
-  window.open("https://drive.google.com/file/d/1AIi2e7pMWo-0Yd7SYMixwIJQXAQ7G2yc/view?usp=sharing", "_blank");
+  window.open("https://drive.google.com/file/d/1hYJtFPNoLIZYHoQcfPhByHO_fbNTepsR/view?usp=sharing", "_blank");
 };
 
   return (
