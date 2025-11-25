@@ -33,7 +33,7 @@ export const arrayProjectsInfo = [
     description:
       "Landing Page desenvolvida como catálogo para facilitar a exibição dos produtos disponíveis para os clientes da Gabriel do Cell. (As imagens dos produtos são ilustrativas, utilizadas apenas para composição do portfólio.)",
     demoUrl: "https://gabirel-do-cell.vercel.app/#my_products",
-    codeUrl: "https://github.com/claudio-inacio/hamburgueria-react",
+    codeUrl: "https://github.com/claudio-inacio/gabirel-do-cell/tree/master",
     image: GabrielDoCellProjectImage,
   },
   {
@@ -42,7 +42,7 @@ export const arrayProjectsInfo = [
     description:
       "Case de estudo, colocando em pratica conceitos importantes de ReactJs, como componentização, estados, redux, manipulação de listas, entre outros... O projeto simula um pedido de delivery até o pagamento.",
     demoUrl: "https://hamburgueria-react-gamma.vercel.app/",
-    codeUrl: "https://github.com/claudio-inacio/gabirel-do-cell/tree/master",
+    codeUrl: "https://github.com/claudio-inacio/hamburgueria-react",
     image: BurguerHeroProjectImage,
 
   },
