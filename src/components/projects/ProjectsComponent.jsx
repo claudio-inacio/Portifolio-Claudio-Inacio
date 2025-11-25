@@ -1,5 +1,5 @@
 
-import { ProjectsContainer } from "./styleProjectsComponent";
+import { ProjectsContainer, TitleHeader } from "./styleProjectsComponent";
 import BackgroundProjectImage from "../../image/background-image.jpeg";
 import BackgroundProjectImage2 from "../../image/background-image-2.jpeg";
 import BackgroundProjectImage3 from "../../image/background-image-3.png";
@@ -14,6 +14,7 @@ import EcommerceProjectImage from "../../image/ecommerce-project.png";
 import JogoGeniusPrjectImage from "../../image/jogo-genius-projeto.png";
 import ProjectComponent from "./project/ProjectComponent";
 import ProjectsGrid from "./ProjectGrid";
+import IconInfo from "../modern-icons/info/IconInfo";
 
 export const arrayProjectsInfo = [
   {
@@ -110,7 +111,10 @@ export const arrayProjectsInfo = [
 const ProjectsComponent = ({ showMenu, showClickMenu }) => {
   return (
     <ProjectsContainer>
+      <TitleHeader >
        <h2>Projetos</h2>
+        <IconInfo  message='Algumas das tecnologias mencionadas acima não estão presentes nos meus projetos pessoais, porém fazem parte do meu dia a dia no trabalho.'/>
+      </TitleHeader>
       <ProjectsGrid>
         {arrayProjectsInfo.map((project) => {
           return (
