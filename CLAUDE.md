@@ -16,7 +16,7 @@ npm run preview   # serve o build de produção localmente
 
 Não há suíte de testes nem linter configurados neste projeto.
 
-Gerenciador de pacotes: `yarn.lock` e `package-lock.json` coexistem — confirme com o usuário qual usar antes de instalar dependências novas; `.nvmrc`/`engines.node` fixam Node 22.x.
+Gerenciador de pacotes: **npm** (via `package-lock.json`). Não recriar `yarn.lock` — ele já causou falha de build na Vercel (lockfile desatualizado, resolvia mal dependências opcionais de plataforma como `fsevents`/`@esbuild/*`, e a Vercel prioriza `yarn.lock` quando ambos existem). `vercel.json` fixa explicitamente `installCommand`/`buildCommand`/`outputDirectory` para evitar essa ambiguidade de novo. `.nvmrc`/`engines.node` fixam Node 22.x.
 
 ## Architecture
 
